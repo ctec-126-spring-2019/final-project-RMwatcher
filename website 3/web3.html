@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Final Project 3 of 3</title>
+    <link rel="stylesheet" href="web3.css">
+</head>
+<body>
+    <h1>Matching Dice</h1>
+    <p>In order to win, you must match the number that is displayed to match the number of the card you have displayed (the jack card will count as 11).</p>
+    <p>To start, press the roll dice button and it will generate a random number every few seconds up until 5 turns. </p>
+    <h2>special numbers</h2>
+    <p>The following two numbers hold special meaning to this game.</p>
+    <ul>
+        <li>2: If the game generate a number 2, you'll get an extra turn regardless of which turn you're on at the moment.</li><br>
+        <li>12: If the game generate a number 12, it will end the game and you'll lose that game regardless if you have 3 or more cards matching cards.</li>
+    </ul>
+
+    <button id="newGame">New Game</button>
+    <button id="shuffle">shuffle</button>
+    <button id="startGame">Start Game!</button>
+
+    <div id="diceSpace"></div>
+
+    <div id="container"></div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="web3.js"></script>
+</body>
+</html>
