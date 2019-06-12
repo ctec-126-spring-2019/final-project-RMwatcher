@@ -2,3 +2,32 @@ body {
 	font-family: Arial, Verdana, Sans-Sarif;
 	font-size: 1em;
 }
+
+/* from lab 9 with some changes */
+.card {
+	align-self: auto;
+	border: 2px solid #dadada;
+	margin: 10px;
+	margin-top: 80px;
+	border-radius: 8px;
+	box-shadow: 4px 4px 4px;
+	background-color: white;
+}
+
+#container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+	padding:20px;
+	border-radius: 8px;
+	background-color: darkcyan;
+}
+
+#diceSpace {
+	text-align: center;
+	margin-left: 490px;
+	font-size: 60px;
+	width: 500px;
+}

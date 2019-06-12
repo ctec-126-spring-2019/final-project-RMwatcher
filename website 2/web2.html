@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="web2.css">
 </head>
 <body>
+    <h1>CTEC 126 Form Project</h1>
     <div class="blank"></div>
     <form action="http://ctec.clark.edu/~belgort/formprocessing/processform.php" method="post" id="info" name="info">
         <fieldset id="contact">
@@ -42,13 +43,24 @@
             <legend>School Info</legend>
 
             <label for="school">School you're attending:</label>
-            <select name="school" id="school">
+            <input type="text" name="school" id="school" list="college">
+            <datalist id="college">
                 <option value="-">--Choose your school--</option>
                 <option value="clark">Clark College</option>
                 <option value="wsu">Washington State University</option>
                 <option value="hood">Mount Hood</option>
                 <option value="psu">Portland State University</option>
                 <option value="uw">University of Washington</option>
+                </datalist><br><br>
+
+            <label for="class">Which classes you're taking?</label>
+            <select name="class" id="class">
+                <option value="-">--Choose a class--</option>
+                <option value="english">English</option>
+                <option value="math">Math</option>
+                <option value="computer">Computer</option>
+                <option value="art">Art</option>
+                <option value="science">Science</option>
             </select><br><br>
 
             <p id="resident">Are you from out-of-state?</p>
@@ -56,8 +68,29 @@
             <label for="yes">Yes</label>
             <input type="radio" name="resident" id="no" value="no">
             <label for="no">No</label>
+
+            <p id="quarter">Select which term you're taking</p>
+            <input type="radio" name="quarter" id="summer">
+            <label for="summer">Summer</label>
+            <input type="radio" name="quarter" id="fall">
+            <label for="fall">Fall</label>
+            <input type="radio" name="quarter" id="spring">
+            <label for="spring">Spring</label>
+            <input type="radio" name="quarter" id="winter">
+            <label for="winter">Winter</label><br><br>
+
+        </fieldset><br><br>
+        <fieldset>
+            <legend id="term">Terms and Conditions</legend>
+            <p>Check box to accept terms and conditions</p>
+            <input type="checkbox" name="terms[]" id="terms">
+            <label for="terms">I Accept</label><br><br>
         </fieldset><br>
+        <input type="submit" value="Send Form">
+
     </form>
+
+    <div class="blank"></div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="web2.js"></script>
