@@ -3,6 +3,14 @@ body {
 	font-size: 1em;
 }
 
+h1, h2, p {
+	text-align: center;
+}
+
+li, p {
+	font-size: 1.2em;
+}
+
 /* from lab 9 with some changes */
 .card {
 	align-self: auto;
@@ -20,9 +28,10 @@ body {
 	flex-wrap: wrap;
 	justify-content: space-around;
 	align-items: center;
-	padding:20px;
+	padding:10px;
 	border-radius: 8px;
 	background-color: darkcyan;
+	height: 300px;
 }
 
 #diceSpace {
