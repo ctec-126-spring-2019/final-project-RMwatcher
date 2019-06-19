@@ -13,14 +13,17 @@
     <div id="header">
         <h1>Blueberry Buckle</h1>
         <p>Makes 8 servings</p>
-        <p>Choose your unit of measurements</p>
+        <p>Select your unit of measurements</p>
         <button onclick="convert(us);">U.S.</button>
         <button onclick="convert(metric);">Metric</button>
     </div>
     <div id="content1">
-        <img src="img/blueberry-3460423_640.jpg" alt="picture of washed blueberries" height="426px" width="640px">
+        <!-- image of a blueberry -->
+        <img src="img/blueberry-3460423_640.jpg" alt="picture of washed blueberries" height="426" width="640">
         <h3>Crumble</h3>
         <ul>
+            <!-- each list item has a span with a class that has the name -->
+            <!-- convert plus a number -->
             <li><span class="convert0"></span> granulated sugar</li>
             <li><span class="convert0"></span> dark brown sugar</li>
             <li><span class="convert1"></span> all-purpose flour</li>
@@ -30,6 +33,8 @@
 
         <h3>Batter</h3>
         <ul>
+            <!-- each list item has a span with a class that has the name -->
+            <!-- convert plus a number -->
             <li><span class="convert0"></span> butter</li>
             <li><span class="convert3"></span> granulated sugar</li>
             <li>1 egg</li>
@@ -40,6 +45,8 @@
 
         <h3>Filling</h3>
         <ul>
+            <!-- each list item has a span with a class that has the name -->
+            <!-- convert plus a number -->
             <li><span class="convert6"></span> blueberries</li>
             <li><span class="convert7"></span> fresh lemon juice</li>
             <li><span class="convert7"></span> flour</li>
@@ -47,9 +54,21 @@
         </ul>
     </div>
     <br>
+    <!-- created a div with an id of content2 to hold the directions -->
     <div id="content2">
         <h2>Directions</h2>
-        <div id="howTo"></div>
+        <!-- I created a div with an id of howTo to put the paragraphs that holds the directions. -->
+        <div id="howTo">
+            <!-- I gave each paragraph an id of p1 where the number after the p is a different number -->
+            <p id="p1">To prepare the crumble, combine all ingredients in a large bowl and break apart with fingers. Refrigerate prepared crumble.</p>
+            <p id="p2">To prepare the batter, cream butter and sugar in a medium-size bowl, then mix in egg. Sift together dry ingredients, then mix in half the dry ingredients to the creamed butter, then mix in buttermilk as well. Add the remaining half of dry ingredients into mixture until just combined. Refrigerate batter for 30 minutes.</p>
+            <p id="p3">To prepare the filling, combine all ingredients in a seperate bowl and sit aside.</p>
+            <p id="p4">Preheat oven to <span class="convert9"></span>. Grease eight <span class="convert10"></span> ramekins, muffin pans or one large Pyrex pie pan. Add <span class="convert0"></span> of batter to each mold smoothing mixture with a plastic spatula. Add <span class="convert1"></span> of blueberries on top of batter then top with <span class="convert0"></span> of crumble making sure the crumble is broken up first before topping.</p>
+            <p id="p5">Bake in oven for 30 to 35 minutes until the top is brown and filling just starts to bubble. Remove from oven and allow to cool for an additional 20 minutes. Serve warm or at room temperature.</p>
+        </div>
+    </div>
+    <div id="footer">
+        <p>Copyright &copy; 2019 Some Rights Reserved.</p>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="web1.js"></script>

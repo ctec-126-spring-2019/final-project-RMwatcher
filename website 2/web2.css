@@ -3,19 +3,32 @@ body {
 	font-size: 1em;
 }
 
-h1 {
+h1, #introduce {
 	text-align: center;
 }
 
-li {
+/* use margin of .7em to give the list item more space for readability. */
+li, #introduce {
 	margin: .7em;
+	font-size: 1.1em;
 }
 
+/* this helps center the form a little you can see the input fields close to the center of the page rather than towards the far left side of the page */
 form {
 	margin-left: 200px;
-	width: 1200px;
+	width: 1000px;
 }
 
+/* I added more margin to each fieldset. This has the same effect as using <br> */
+fieldset {
+	margin: 25px;
+}
+
+legend {
+	font-size: 1.2em;
+}
+
+/* moved the content inside .blank to the right 200px. */
 .blank {
 	margin-left: 200px;
 }

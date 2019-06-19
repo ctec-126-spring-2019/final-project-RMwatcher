@@ -1,9 +1,12 @@
 body {
 	font-family: Arial, Verdana, Sans-Sarif;
-	font-size: 1em;
+    font-size: 1em;
+    /* gave it a different other than white to make it stand out more */
+    background-color: mintcream;
 }
 
-#header {
+#header, #footer {
+    font-size: 1.1em;
     text-align: center;
 }
 
@@ -16,12 +19,14 @@ body {
 #content2 {
     margin-left: 40px;
     width: 1200px;
-    font-size: 1.2em;
+    font-size: 1.3em;
 }
 
+/* this is used to place the image to the right of the list of ingredients */
 img {
     float: right;
     margin-right: 300px;
     margin-top: 100px;
+    border: 1px solid skyblue;
 }
 
